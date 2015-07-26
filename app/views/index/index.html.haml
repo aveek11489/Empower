@@ -23,12 +23,9 @@
           %a{:href => "#"} Partners
 
 #city-images
-  .city-image{:data => { :city => "kolkata"}}
-    = image_tag "kolkata2.png"
-  .city-image{:data => {:city => "mumbai"}}
-    = image_tag "mumbai2.png"
-  .city-image{:data => {:city => "bangalore"}}
-    = image_tag "bangalore2.png"
+  = image_tag "kolkata2.png", :class => "city-image", :data => { :city => "kolkata"}
+  = image_tag "mumbai2.png", :class => "city-image", :style => "display: none;", :data => { :city => "mumbai"}
+  = image_tag "bangalore2.png", :class => "city-image", :style => "display:none", :data => { :city => "bangalore"}
 
 #why-empower
   %h1

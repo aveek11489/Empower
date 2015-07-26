@@ -14,16 +14,11 @@ window.onload = function () {
       $('.city-image').each(function() {
         if($(this).data('city') === city) {
           $(this).show();
-          //$(this).css("display", "block");
         } else {
           $(this).hide();
-          //$(this).css("display", "none");
         }
       });
     });
   });
  
-  $('.cities .active').click(); 
-
-
 }
