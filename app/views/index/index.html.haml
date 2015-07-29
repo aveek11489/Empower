@@ -63,7 +63,22 @@
       .step-instructions
         4. Get rewarded
 
-.container5
+#why-empower
+  %h1
+    .header2
+      Why Partner With Us?
+    .why-empower-border
+
+= render :partial => 'partnership_details'
+
+#contact-section
+  .contact-message
+    %p.message
+      One of the primary objectives for us at Empower is to make the experience of utilizing our product more profitable for our partners at the Merchant end. Please fill up the form to start the process.
+  = render :partial => 'contact_form'
+
+
+#container5
   .social
     .icon-button.twitter{:href => "#"}
       %i.icon-twitter
@@ -82,5 +97,4 @@
       Copyright © 2015 - 2016 - All Rights Reserved 
       %span.footer-separator| 
       Contact Us
-
 
