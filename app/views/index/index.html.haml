@@ -5,13 +5,6 @@
         EMPOWER
       .full
         electronic money power
-    %ul.cities
-      %li.active{:data => {:city => "kolkata"}}
-        Kolkata
-      %li{:data => {:city => "bangalore"}} 
-        Bangalore
-      %li{:href => "#", :data => {:city => "mumbai"}} 
-        Mumbai
     #header-right-navbar
       %ul.nav.navbar-nav
         %li.active
@@ -25,7 +18,7 @@
         %li
           %a{:href => "#"} Partners
 
-#cityCarousel.carousel.slide{:data => {"ride": "carousel1"}}
+#cityCarousel.carousel.slide{:data => {"ride" => "carousel", "interval" => "2500"}}
   %ol.carousel-indicators
     %li.active{:data => {"target" => "#cityCarousel", "slide-to" => "0"}}
     %li{:data => {"target" => "#cityCarousel", "slide-to" => "1"}}
@@ -33,11 +26,20 @@
 
   .carousel-inner{:role => "listbox"}
     .item.active
-      = image_tag "kolkata2.png"
+      = image_tag "kolkata.png"
+      .carousel-caption
+        %h3 Kolkata
+        %p Use to get Metro tickets, book pre-paid taxis in the airport and for parking in select malls
     .item
-      = image_tag "mumbai2.png"
+      = image_tag "mumbai.png"
+      .carousel-caption
+        %h3 Mumbai
+        %p Use to get local train tickets, book pre-paid taxis in the airport and for parking in select malls
     .item
-      = image_tag "bangalore2.png"
+      = image_tag "bangalore.png"
+      .carousel-caption
+        %h3 Bangalore
+        %p Use to get Metro tickets, book pre-paid taxis in the airport and for parking in select malls
 
   %a.left.carousel-control{:href => "#cityCarousel", :role => "button", :data => {"slide" => "prev"} }
     %span.glyphicon.glyphicon-chevron-left{:aria => {"hidden" => "true"}}

@@ -66,6 +66,12 @@
   max-width: 1500px;
 }
 
+#cityCarousel {
+  width: 70%;
+  margin-left: 15%;
+  height: 480px;
+}
+
 #why-empower {
   padding-top: 20px;
 }
