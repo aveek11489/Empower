@@ -5,6 +5,13 @@
         <span>EM</span>POWER
       .full
         electronic money power
+    %ul.cities
+      %li.active{:data => {:city => "kolkata"}}
+        Kolkata
+      %li{:data => {:city => "bangalore"}} 
+        Bangalore
+      %li{:href => "#", :data => {:city => "mumbai"}} 
+        Mumbai
     #header-right-navbar
       %ul.nav.navbar-nav
         %li.active
@@ -20,9 +27,9 @@
 
 #cityCarousel.carousel.slide{:data => {"ride" => "carousel", "interval" => "2500"}}
   %ol.carousel-indicators
-    %li.active{:data => {"target" => "#cityCarousel", "slide-to" => "0"}}
-    %li{:data => {"target" => "#cityCarousel", "slide-to" => "1"}}
-    %li{:data => {"target" => "#cityCarousel", "slide-to" => "2"}}
+    %li.active{:data => {"target" => "#cityCarousel", "slide-to" => "0", "city" => "kolkata"}}
+    %li{:data => {"target" => "#cityCarousel", "slide-to" => "1", "city" => "mumbai"}}
+    %li{:data => {"target" => "#cityCarousel", "slide-to" => "2", "city" => "bangalore"}}
 
   .carousel-inner{:role => "listbox"}
     .item.active

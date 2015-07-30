@@ -8,14 +8,13 @@ window.onload = function () {
       $('.cities li').each(function () {
         $(this).removeClass('active');
       });
-
       $(this).addClass('active');
       
-      $('.city-image').each(function() {
+      $('.carousel-indicators li').each(function() {
         if($(this).data('city') === city) {
-          $(this).show();
+          $(this).addClass('active')
         } else {
-          $(this).hide();
+          $(this).removeClass('active');
         }
       });
     });

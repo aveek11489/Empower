@@ -28,24 +28,21 @@
 
 .cities {
   position: absolute;
-  left: 300px;
+  left: 25%;
   list-style: none;
 }
 
 .cities li {
-  background: #FFFFFF;
   display: inline-block;
   padding: 3px 6px;
   font-weight: bold;
   cursor: pointer;
-  color: #0d69af;
+  color: #FFFFFF;
   font-size: 15px;
 }
 
 .cities li.active {
-  background: #0d69af;
-  display: inline-block;
-  color: #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
 }
 
 #header-right-navbar {
