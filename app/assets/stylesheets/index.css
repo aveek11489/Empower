@@ -326,7 +326,7 @@
 #contact-section {
   margin-top: 50px;
   background: #0d69af;
-  height: 450px; 
+  height: 400px; 
   width: 100%;
   color: #FFFFFF;
 }
@@ -334,25 +334,45 @@
 .contact-form {
   text-transform: uppercase;
   font-size: 14px;
-  padding-top: 40px;
   font-family:  "PT Sans",sans-serif;
-  margin-left: 5%;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .contact-message {
-  width: 50%;
+  width: 100%;
   float: left;
-  font-size: 16px;
-  text-align: justify;
+  font-size: 14px;
+  text-align: center;
 }
 
 p.message {
-  width: 70%;
+  width: 80%;
   margin-left: 10%;
-  margin-top: 10%;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 .contact-form button {
   float: right;
   margin-top: 15px;
+}
+
+.contact-form .form-left {
+  width: 45%;
+  float: left;
+}
+
+.contact-form .form-right {
+  width: 45%;
+  float: right;
+}
+
+.contact-form .form-message {
+  width: 100%;
+  float: left;
+}
+
+.contact-form .form-row {
+  margin-top: 5px;
 } 
