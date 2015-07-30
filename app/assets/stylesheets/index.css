@@ -17,6 +17,10 @@
   font-size: 35px;
 }
 
+.short span {
+  color: black;
+}
+
 #brand-name .full {
   font-size: 16px;
   font-family: 'Merienda One', Helvetica, sans-serif;
