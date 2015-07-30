@@ -10,8 +10,7 @@
   margin-left: 40px;
   margin-top: 13px;
   font-size: 35px;
-  color: #0d69af;
-}
+  color: #0dFFFF}
 
 .cities {
   position: absolute;
@@ -60,6 +59,13 @@
   height: 550px;
 }
 
+.city-image {
+  margin-left: 10%;
+  margin-top: 50px;
+  width: 80%;
+  max-width: 1500px;
+}
+
 #why-empower {
   padding-top: 20px;
 }
@@ -100,8 +106,18 @@
   float: left;
   margin-left: 40px;
   margin-top: 13px;
-  font-size: 35px;
   color: #0d69af;
+}
+
+#brand-name .short {
+  font-size: 35px;
+}
+
+#brand-name .full {
+  font-size: 16px;
+  font-family: 'Merienda One', Helvetica, sans-serif;
+  color: rgba(0,0,0,0.7);
+  text-shadow: 3px 3px 3px #fff;
 }
 
 .cities {
