@@ -32,17 +32,17 @@
     %li{:data => {"target" => "#cityCarousel", "slide-to" => "2", "city" => "bangalore"}}
 
   .carousel-inner{:role => "listbox"}
-    .item.active
+    .item.active{:data => {"city" => "kolkata"}}
       = image_tag "kolkata.png"
       .carousel-caption
         %h3 Kolkata
         %p Use to get Metro tickets, book pre-paid taxis in the airport and for parking in select malls
-    .item
+    .item{:data => {"city" => "mumbai"}}
       = image_tag "mumbai.png"
       .carousel-caption
         %h3 Mumbai
         %p Use to get local train tickets, book pre-paid taxis in the airport and for parking in select malls
-    .item
+    .item{:data => {"city" => "bangalore"}}
       = image_tag "bangalore.png"
       .carousel-caption
         %h3 Bangalore
