@@ -1,17 +1,6 @@
 #top-header
   #top-left
-    #brand-name
-      .short
-        <span>EM</span>POWER
-      .full
-        electronic money power
-    %ul.cities
-      %li.active{:data => {:city => "kolkata"}}
-        Kolkata
-      %li{:href => "#", :data => {:city => "mumbai"}} 
-        Mumbai
-      %li{:data => {:city => "bangalore"}} 
-        Bangalore
+    = image_tag("logo.png", :class => "logo")
     #header-right-navbar
       %ul.nav.navbar-nav
         %li.active
