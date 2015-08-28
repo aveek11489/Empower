@@ -27,5 +27,16 @@ $(document).ready(function () {
       });
     });
   });
+
+  $(window).scroll(function(event) {
+    
+    $(".step").each(function(i, el) {
+      var el = $(el);
+      if (el.visible(true)) {
+        el.addClass("come-in"); 
+      } 
+    });
+    
+  });
  
 });

@@ -20,38 +20,6 @@
   width: 15%;
 }
 
-#brand-name .short {
-  font-size: 35px;
-}
-
-.short span {
-  color: black;
-}
-
-#brand-name .full {
-  font-size: 16px;
-  font-family: 'Merienda One', Helvetica, sans-serif;
-}
-
-.cities {
-  position: absolute;
-  left: 25%;
-  list-style: none;
-}
-
-.cities li {
-  display: inline-block;
-  padding: 3px 6px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #FFFFFF;
-  font-size: 15px;
-}
-
-.cities li.active {
-  border-bottom: 2px solid #FFFFFF;
-}
-
 #header-right-navbar {
   float: right;
   margin-top: 22px;
@@ -75,7 +43,7 @@
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #FFFFFF;
   background: #37BC9B !important;
 }
 
@@ -378,4 +346,24 @@ p.message {
 
 .contact-form .form-row {
   margin-top: 5px;
+}
+
+.come-in {
+  -webkit-transform: translateY(150px);
+  -webkit-animation: come-in 1s ease forwards;
+  -webkit-animation-delay: 0.2s;
+  transform: translateY(150px);
+  animation: come-in 1s ease forwards;
+  animation-delay: 0.2s;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+} 
+
+@-webkit-keyframes come-in {
+  to { transform: translateY(0); }
 } 
