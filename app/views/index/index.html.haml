@@ -8,8 +8,6 @@
         %li
           %a{:href => "#"} Careers
         %li
-          %a{:href => "#"} Products
-        %li
           %a{:href => "#"} Offers
         %li
           %a{:href => "#"} Partners
@@ -21,21 +19,12 @@
     %li{:data => {"target" => "#cityCarousel", "slide-to" => "2", "city" => "bangalore"}}
 
   .carousel-inner{:role => "listbox"}
-    .item.active{:data => {"city" => "kolkata"}}
+    .item.active{:class => "city-images", :data => {"city" => "kolkata"}}
       = image_tag "kolkata.png"
-      .carousel-caption
-        %h3 Kolkata
-        %p Use to get Metro tickets, book pre-paid taxis in the airport and for parking in select malls
-    .item{:data => {"city" => "mumbai"}}
+    .item{:class => "city-images", :data => {"city" => "mumbai"}}
       = image_tag "mumbai.png"
-      .carousel-caption
-        %h3 Mumbai
-        %p Use to get local train tickets, book pre-paid taxis in the airport and for parking in select malls
-    .item{:data => {"city" => "bangalore"}}
+    .item{:class => "city-images", :data => {"city" => "bangalore"}}
       = image_tag "bangalore.png"
-      .carousel-caption
-        %h3 Bangalore
-        %p Use to get Metro tickets, book pre-paid taxis in the airport and for parking in select malls
 
   %a.left.carousel-control{:href => "#cityCarousel", :role => "button", :data => {"slide" => "prev"} }
     %span.glyphicon.glyphicon-chevron-left{:aria => {"hidden" => "true"}}
@@ -50,7 +39,7 @@
       Why Empower?
     .why-empower-border
 
-= render :partial => 'card_details'
+  = render :partial => 'card_details'
 
 #how-does-it-work
   %h1
@@ -86,7 +75,7 @@
       Partner With Us
     .why-empower-border
 
-= render :partial => 'partnership_details'
+  = render :partial => 'partnership_details'
 
 #contact-section
   .contact-message
