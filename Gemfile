@@ -26,6 +26,8 @@ gem 'haml'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'mysql2', '~> 0.3.18'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -44,3 +46,4 @@ group :development, :test do
 end
 gem 'rails_12factor', group: :production
 ruby '2.2.2'
+
